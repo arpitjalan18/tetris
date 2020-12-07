@@ -1,4 +1,7 @@
 # tetris
-I recreated tetris as a way to learn Java Swing.
+A simple tetris app using Java Swing.
+![Demo Image](demo.png)
+
+
 
 This should run on any Java client.
