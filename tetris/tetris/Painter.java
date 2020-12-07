@@ -16,17 +16,17 @@ public class Painter extends JPanel{
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		g.setColor(Back);
-		g.fillRect(0, 0, 550, 1050);
+		g.fillRect(0, 0, 530, 1030);
 		
 		for (int i = 0; i < 10; i+=1) {
 			for(int j = 0; j < 20; j+=1) {
 				if((i+j)%2==0) {
 					g.setColor(grey1);
-					g.fillRect(50*i+5, 50*j+5, 45, 45);
+					g.fillRect(30*i+5, 30*j+5, 25, 25);
 				}
 				else {
 					g.setColor(grey2);
-					g.fillRect(50*i+5, 50*j+5, 45, 45);
+					g.fillRect(30*i+5, 30*j+5, 25, 25);
 				}
 			}
 		} 
@@ -35,21 +35,21 @@ public class Painter extends JPanel{
 		for (int i = 0; i < tetris.shadowBoxes.size(); i+=1) {
 			if(tetris.shadowBoxes.get(i) != null) {
 				g.setColor(Color.WHITE);
-				g.fillRect(50*tetris.shadowBoxes.get(i).x+5, 50*tetris.shadowBoxes.get(i).y+5, 45, 45);
+				g.fillRect(30*tetris.shadowBoxes.get(i).x+5, 30*tetris.shadowBoxes.get(i).y+5, 25, 25);
 			}
 		
 	}
 		for (int i = 0; i < tetris.boxes.size(); i+=1) {
 			if(tetris.boxes.get(i) != null) {
 				g.setColor(tetris.boxes.get(i).getColor());
-				g.fillRect(50*tetris.boxes.get(i).x+5, 50*tetris.boxes.get(i).y+5, 45, 45);
+				g.fillRect(30*tetris.boxes.get(i).x+5, 30*tetris.boxes.get(i).y+5, 25, 25);
 			}
 		
 	}
 		for (int i = 0; i < tetris.setBoxes.size(); i+=1) {
 			if(tetris.setBoxes.get(i) != null) {
 				g.setColor(tetris.setBoxes.get(i).getColor());
-				g.fillRect(50*tetris.setBoxes.get(i).x+5, 50*tetris.setBoxes.get(i).y+5, 45, 45);
+				g.fillRect(30*tetris.setBoxes.get(i).x+5, 30*tetris.setBoxes.get(i).y+5, 25, 25);
 			}
 		
 	}

@@ -38,7 +38,7 @@ public class Frame implements ActionListener, KeyListener{
 	public Frame(){
 		frame = new JFrame("");
 		frame.setVisible(true);
-		frame.setSize(510, 1040);
+		frame.setSize(320, 640);
 		frame.setResizable(false);
 		//frame.setLocationRelativeTo(null);
 		frame.add(painter = new Painter());

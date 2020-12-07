@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=box
+comment1.params=color\ x\ y
+comment1.target=box(java.awt.Color,\ int,\ int)
+comment2.params=
+comment2.target=java.awt.Color\ getColor()
+comment3.params=
+comment3.target=boolean\ full()
+comment4.params=
+comment4.target=void\ gravity()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
